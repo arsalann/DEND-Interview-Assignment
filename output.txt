@@ -1,0 +1,288 @@
+(base) C:\Users\ArsalanNoorafkan\OneDrive\Interviews\Wave\DEND-Interview-Assignment>cd Ex 1
+
+(base) C:\Users\ArsalanNoorafkan\OneDrive\Interviews\Wave\DEND-Interview-Assignment\Ex 1>python main.py
+
+
+ETL Pipeline Started at 2021-09-10 15:25:15.433550
+
+
+Enter a year (e.g. 2021): 2021
+Enter a city (e.g. Toronto): Toronto
+Enter the province (e.g. Ontario): Ontario
+        Processing Data for Years: [2021, 2020, 2019]
+
+
+Processing Dimension Datasets...
+
+                Geonames API Call Started...
+                Geonames API Call Finished!
+                Geonames Data Transformation Complete!
+                Stations API Call Complete!
+                Stations Data Transformation Complete!
+
+
+Processing Fact Dataset...
+
+21/09/10 15:25:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Year 2021 Starting...
+21/09/10 15:25:39 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+        0) Station ID '53838' Processed: 365 Records
+        1) Station ID '52723' Processed: 365 Records
+        2) Station ID '5051' Processed: 365 Records
+        3) Station ID '41863' Processed: 365 Records
+        4) Station ID '31688' Processed: 365 Records
+        5) Station ID '5061' Processed: 365 Records
+        6) Station ID '5063' Processed: 365 Records
+        7) Station ID '5065' Processed: 365 Records
+        8) Station ID '5059' Processed: 365 Records
+        9) Station ID '5095' Processed: 365 Records
+        10) Station ID '5096' Processed: 365 Records
+        11) Station ID '5117' Processed: 365 Records
+        12) Station ID '5089' Processed: 365 Records
+        13) Station ID '5124' Processed: 365 Records
+Year 2020 Starting...
+        0) Station ID '53838' Processed: 366 Records
+21/09/10 15:25:45 WARN ProcfsMetricsGetter: Exception when trying to compute pagesize, as a result reporting of ProcessTree metrics is stopped
+        1) Station ID '52723' Processed: 366 Records
+        2) Station ID '5051' Processed: 366 Records
+        3) Station ID '41863' Processed: 366 Records
+        4) Station ID '31688' Processed: 366 Records
+        5) Station ID '5061' Processed: 366 Records
+        6) Station ID '5063' Processed: 366 Records
+        7) Station ID '5065' Processed: 366 Records
+        8) Station ID '5059' Processed: 366 Records
+        9) Station ID '5095' Processed: 366 Records
+        10) Station ID '5096' Processed: 366 Records
+        11) Station ID '5117' Processed: 366 Records
+        12) Station ID '5089' Processed: 366 Records
+        13) Station ID '5124' Processed: 366 Records
+Year 2019 Starting...
+        0) Station ID '53838' Processed: 365 Records
+        1) Station ID '52723' Processed: 365 Records
+        2) Station ID '5051' Processed: 365 Records
+        3) Station ID '41863' Processed: 365 Records
+        4) Station ID '31688' Processed: 365 Records
+        5) Station ID '5061' Processed: 365 Records
+        6) Station ID '5063' Processed: 365 Records
+        7) Station ID '5065' Processed: 365 Records
+        8) Station ID '5059' Processed: 365 Records
+        9) Station ID '5095' Processed: 365 Records
+        10) Station ID '5096' Processed: 365 Records
+        11) Station ID '5117' Processed: 365 Records
+        12) Station ID '5089' Processed: 365 Records
+        13) Station ID '5124' Processed: 365 Records
+        Processing 42 Files...
+
+
+
+        Checking Data Quality Starting...
+
+                Checking Weather Data...
+                        Checking Weather Data has 0 Duplicate Records.
+                        Checking Weather Data for Missing Values...
+
+Longitude             0
+Latitude              0
+StationName           0
+ClimateID             0
+DateTime              0
+Year                  0
+Month                 0
+Day                   0
+DataQuality         975
+MaxTemp               0
+MaxTempFlag         975
+MinTemp               0
+MinTempFlag         975
+MeanTemp              0
+MeanTempFlag        975
+HeatDegDays           0
+HeatDegDaysFlag     975
+CoolDegDays           0
+CoolDegDaysFlag     975
+TotalRainmm         975
+TotalRainFlag       975
+TotalSnowcm         975
+TotalSnowFlag       975
+TotalPrecipmm         0
+TotalPrecipFlag     975
+SnowonGrndcm        695
+SnowonGrndFlag      975
+DirofMaxGustsdeg    975
+DirofMaxGustFlag      0
+SpdofMaxGustkmh     975
+SpdofMaxGustFlag      0
+StationID             0
+dtype: int64
+
+
+                Checking Stations Data...
+                        Checking Stations Data has 0 Duplicate Records.
+                        Checking Stations Data for Missing Values...
+
+index          0
+StationName    0
+Province       0
+ClimateID      0
+StationID      0
+Latitude       0
+Longitude      0
+IRID           0
+Elevation      0
+FirstYear      0
+LastYear       0
+dtype: int64
+
+
+                Checking Geonames Data...
+                        Checking Geonames Data has 0 Duplicate Records.
+                        Checking Geonames Data for Missing Values...
+
+id                0
+name              0
+language.code     0
+language.href     0
+syllabic         98
+feature.id        0
+feature.href      0
+category          0
+status.code       0
+status.href       0
+concise.code      0
+concise.href      0
+generic.code      0
+generic.href      0
+location         46
+province.code     0
+province.href     0
+map               0
+relevance         0
+accuracy          0
+latitude          0
+longitude         0
+decision          0
+dtype: int64
+
+
+
+Checking Data Quality Complete!
+
+
+
+
+ETL Pipeline Started at 2021-09-10 15:25:15.433550
+        Final Dataset has 975 rows
+        Processing Data for Years: [2021, 2020, 2019]
+        City: Toronto
+        Province: Ontario
+
+ETL Pipeline Finished at 2021-09-10 15:25:54.131920
+
+ETL Pipeline Duration: 0:00:38.698370
+
+
+(base) C:\Users\ArsalanNoorafkan\OneDrive\Interviews\Wave\DEND-Interview-Assignment\Ex 1>SUCCESS: The process with PID 17240 (child process of PID 15204) has been terminated.
+SUCCESS: The process with PID 15204 (child process of PID 36164) has been terminated.
+SUCCESS: The process with PID 36164 (child process of PID 27936) has been terminated.
+
+(base) C:\Users\ArsalanNoorafkan\OneDrive\Interviews\Wave\DEND-Interview-Assignment\Ex 1>
+(base) C:\Users\ArsalanNoorafkan\OneDrive\Interviews\Wave\DEND-Interview-Assignment\Ex 1>cd ..
+
+(base) C:\Users\ArsalanNoorafkan\OneDrive\Interviews\Wave\DEND-Interview-Assignment>cd Ex 2
+
+(base) C:\Users\ArsalanNoorafkan\OneDrive\Interviews\Wave\DEND-Interview-Assignment\Ex 2>python main.py
+
+
+ETL Pipeline Started at 2021-09-10 15:26:10.135859
+
+
+        Processing 42 Files...
+
+Staging Started...
+
+        Dimension table Cities staged.
+        Dimension table Stations staged.
+        Fact table Weather staged.
+        Fact and dimension tables joined.
+
+Staging Finished.
+
+
+QUERY RESULTS:
+         42 day(s) in 2021 where mean temperature was the same as the year before.
+
+
+QUERY RESULTS:
+         1 day(s) in 2021 where mean temperature was the same as the year before.
+
+
+QUERY RESULTS:
+         11.5 was the average temperature in year 2021.
+
+
+QUERY RESULTS:
+         33.2 was the highest temperature in year 2021.
+
+
+QUERY RESULTS:
+         -13.5 was the highest temperature in year 2021.
+
+
+QUERY RESULTS:
+         -13.5 was the highest temperature in year 2021.
+
+
+QUERY RESULTS:
+         -1.4 was the highest temperature in year 2021.
+
+
+QUERY RESULTS:
+         -3.8 was the average temperature in year 2021 month 1.
+
+
+QUERY RESULTS:
+         4.0 was the average temperature in year 2021 month 2.
+
+
+QUERY RESULTS:
+         8.4 was the average temperature in year 2021 month 3.
+
+
+QUERY RESULTS:
+         14.4 was the average temperature in year 2021 month 4.
+
+
+QUERY RESULTS:
+         21.4 was the average temperature in year 2021 month 5.
+
+
+QUERY RESULTS:
+         21.6 was the average temperature in year 2021 month 6.
+
+
+QUERY RESULTS:
+         24.1 was the average temperature in year 2021 month 7.
+
+
+QUERY RESULTS:
+         19.8 was the average temperature in year 2021 month 8.
+
+
+
+ETL Pipeline Started at 2021-09-10 15:26:10.135859
+        Processing Data for Year: 2021
+        City: Toronto
+        Province: Ontario
+
+ETL Pipeline Finished at 2021-09-10 15:26:11.112624
+
+ETL Pipeline Duration: 0:00:00.976765
+
+
+
+
+
+DONE
