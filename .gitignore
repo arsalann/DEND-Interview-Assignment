@@ -112,3 +112,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+Ex 1/datalake/weather/*/*
+Ex 1/file.csv
+Ex 1/temp.csv
+Ex 1/tempdb.db
