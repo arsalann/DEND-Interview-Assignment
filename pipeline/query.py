@@ -519,22 +519,18 @@ def main():
     input_province = "Ontario"
 
     # Set user input values
-    # input_year = input('Enter a year (e.g. 2021): ')
-    # input_year = int(input_year)
-    # input_city = input('Enter a city (e.g. Toronto): ')
-    # input_province = input('Enter the province (e.g. Ontario): ')
+    input_year = input('Enter a year (e.g. 2021): ')
+    input_year = int(input_year)
+    input_city = input('Enter a city (e.g. Toronto): ')
+    input_province = input('Enter the province (e.g. Ontario): ')
 
 
 
 
     # Run the function to query the weather dataset and export Excel and return dataframes
 
-    results = load_data_models(input_city, input_province, data_lake, sql_engine)
+    load_data_models(input_city, input_province, data_lake, sql_engine)
     staging_queries(sql_engine)
-
-    df_weather = results[0]
-    df_stations= results[1]
-    df_geonames = results[2]
 
 
     analysis_queries(input_year, sql_engine)
