@@ -1,5 +1,3 @@
-#%%
-
 from datetime import datetime
 import pyspark
 import requests
@@ -12,12 +10,6 @@ from pyspark.sql.functions import lit
 
 from sqlalchemy import create_engine
 
-
-# directory of weather data
-data_lake = "datalake/weather"
-
-# sqlite engine for temporary query results
-sql_engine = create_engine('sqlite:///tempdb.db', echo=False)
 
 
 
@@ -57,7 +49,9 @@ def create_directory(dir):
 
 
 
-def extract_dimension_datasets(city_name, province_name, data_lake):
+
+
+def extract_dimension_datasets(city_name, province_name, data_lake, sql_engine):
     '''
         Create a dimension table for Weather Stations
             - Pandas to read the Stations and GeoNames CSV files from the web
@@ -72,19 +66,27 @@ def extract_dimension_datasets(city_name, province_name, data_lake):
 
     city_name = city_name.lower()
     province_name = province_name.lower()
-    
 
-    # Step 1) Make API Call using https_request_to_csv function and load geonames dimension table into sql
+    output_dim = data_lake + "/dim"
+    
+    create_directory(output_dim)
+    output_geonames = output_dim+'/geonames.csv'
+    output_stations = '{}/{}_stations.csv'.format(output_dim, city_name)
+
+    # Make API Call using https_request_to_csv function and load geonames dimension table into sql
     print('\t\tGeonames API Call Started...')
     try:
+        
+
         url = 'http://geogratis.gc.ca/services/geoname/en/geonames.csv'
         df_geonames = pd.read_csv(https_request_to_csv(url))
         df_geonames.to_sql('dim_geonames', sql_engine, if_exists='replace')
+
+        # Export geonames dimensional table to CSV    
+        df_geonames.to_csv(output_geonames, index=False)
         print('\t\tGeonames API Call Finished!')
 
-
-
-        # Step 2) Based on user's Province Name input, find the corresponding Province Code
+        # Based on user's Province Name input, find the corresponding Province Code
         table = 'province'
         query = '''
             SELECT DISTINCT
@@ -102,15 +104,10 @@ def extract_dimension_datasets(city_name, province_name, data_lake):
         df.to_sql(table, sql_engine, if_exists='replace')
         provinceCode = df.ProvinceCode[0]
 
-        output_geonames = '{}/dim/{}/'.format(data_lake, province_name)
-        create_directory(output_geonames)
-        output_geonames = '{}{}_geonames.csv'.format(output_geonames, city_name)
-        df.to_csv(output_geonames, index=False)
-
 
         '''
-        Step 3a) Create an internal reference ID (IRID)* using latitude and longitute to help filter stations in selected city
-        Step 3b) Based on user's City Name input and the corresponding Province Code, return the corresponding IRIDs
+        - Create an internal reference ID (IRID)* using latitude and longitute to help filter stations in selected city
+        - Based on user's City Name input and the corresponding Province Code, return the corresponding IRIDs
 
         * In order to pull data for Toronto, we need a reference table of stations and their coordinates that we can cross-reference with geo-names dataset from NRCAN to see which stations geographically are within the city of Toronto. Using one (1) decimal point precision, we can use the latitude and longitude to find stations within Toronto.
         '''
@@ -131,14 +128,15 @@ def extract_dimension_datasets(city_name, province_name, data_lake):
         print('\t\tGeonames Data Transformation Complete!')
 
 
-        # Step 4) Make API Call using https_request_to_csv function and load stations dimension table into sql
+        # Make API Call using https_request_to_csv function and load stations dimension table into sql
         try:
             url = 'https://drive.google.com/u/0/uc?id=1HDRnj41YBWpMioLPwAFiLlK4SK8NV72C&export=download'
             df_stations = pd.read_csv(https_request_to_csv(url), skiprows=2, delimiter=',')
             df_stations.to_sql('dim_stations', sql_engine, if_exists='replace')
 
+            print('\t\tStations API Call Complete!')
 
-            # Step 5) Select the columns we need from stations dataset and create an IRID using latitude and longitude
+            # Select the columns we need from stations dataset and create an IRID using latitude and longitude
             table = 'stations'
             query = '''
                 SELECT
@@ -166,11 +164,10 @@ def extract_dimension_datasets(city_name, province_name, data_lake):
             '''
             df = pd.read_sql(query, sql_engine)
             df.to_sql(table, sql_engine, if_exists='replace')
-            print('\t\tStations API Call Complete!')
 
 
 
-            # Step 6) Filter the stations dataset for the stations that meet the user's city/province criteria based on IRID
+            # Filter the stations dataset for the stations that meet the user's city/province criteria based on IRID
             query = '''
                 SELECT
                     stations.*
@@ -184,12 +181,11 @@ def extract_dimension_datasets(city_name, province_name, data_lake):
             '''
             df = pd.read_sql(query, sql_engine)
 
-            list_stations = df.StationID.drop_duplicates().tolist()
-            
-            output_stations = '{}/dim/{}/'.format(data_lake, province_name)
-            create_directory(output_stations)
-            output_stations = '{}{}_stations.csv'.format(output_stations, city_name)
+            # Export stations dimension table to CSV
             df.to_csv(output_stations, index=False)
+            
+            list_stations = df.StationID.drop_duplicates().tolist()
+        
             print('\t\tStations Data Transformation Complete!')
             
             return list_stations, df
@@ -215,7 +211,7 @@ def extract_weather_dataset(list_stations, list_years, data_lake):
 
     spark = spark_session_init()
 
-    # Step 1) Create a conversion list for column names
+    # Create a conversion list for column names
     cols = {
         "Longitude (x)": "Longitude",
         "Latitude (y)": "Latitude",
@@ -251,34 +247,34 @@ def extract_weather_dataset(list_stations, list_years, data_lake):
         "StationID": "StationID"
     }
 
-    # Step 2) Based on the list of stations and years, make API calls to get the weather dataset
+    # Based on the list of stations and years, make API calls to get the weather dataset
     for year in list_years:
         print("Year {} Starting...".format(year))
 
         for station in list_stations:
 
-            # 2a) Make API call to get the weather dataset as csv and read with spark
+            # Make API call to get the weather dataset as csv and read with spark
             url = 'https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID={}&Year={}&Month=1&Day=1&time=&timeframe=2&submit=Download+Data'.format(station, year)
 
             df = spark.read.csv(https_request_to_csv(url), header=True, inferSchema=True)
 
-            # Step 2b) Insert Station ID as a new column
+            # Insert Station ID as a new column
             df = df.withColumn("StationID", lit(station))
 
-            # Step 2c) Set the output directory
+            # Set the output directory
             output_folder = '{}/fact/{}/'.format(data_lake, year)
             output_dir = Path(output_folder)
             output_dir.mkdir(parents=True, exist_ok=True)
 
 
-            # Step 2d) Convert the dataframe to a pandas dataframe and write to csv
+            # Convert the dataframe to a pandas dataframe and write to csv
                 # NOTE TO WAVE: unfortunately I had to switch to pandas after having trouble with Spark's CSV reading and writing on my local machine
             df = df.toPandas()
 
-            # Step 2e) Rename the columns
+            # Rename the columns
             df = df.rename(columns=cols)
 
-            # Step 2f) Write csv to the partition folder
+            # Write csv to the partition folder
             output = '{}{}.csv'.format(output_folder, station)
             df.to_csv(output, index=False)
 
@@ -288,7 +284,7 @@ def extract_weather_dataset(list_stations, list_years, data_lake):
 
 
 
-def query_weather_excel(list_years, city_name, province_name, data_lake):
+def query_weather_excel(list_years, city_name, province_name, data_lake, sql_engine):
     '''
         Create a dataset that combines the weather data for all the stations and years based on input city and province
             - Pandas to read and concat partitioned CSV files
@@ -300,11 +296,12 @@ def query_weather_excel(list_years, city_name, province_name, data_lake):
 
     # directory of weather fact data and dimension tables
     # input_fact = data_lake + "/2021/31688.csv"
-    input_fact = data_lake + "/fact/*/*.csv"
-    input_dim = data_lake + "/dim/{}/{}_".format(province_name, city_name)
+    fact_weather = data_lake + "/fact/*/*.csv"
+    dim_stations = data_lake + "/dim/{}_stations.csv".format(city_name)
+    dim_geonames = data_lake + "/dim/geonames.csv"
 
-    # list of all the files from input_fact
-    list_files = sorted(glob.glob(input_fact))
+    # list of all the files from fact_weather
+    list_files = sorted(glob.glob(fact_weather))
     print('\tProcessing {} Files...'.format(len(list_files)))
 
 
@@ -329,11 +326,11 @@ def query_weather_excel(list_years, city_name, province_name, data_lake):
 
 
     # Load stations dimension table and insert into sqlite
-    df_stations = pd.read_csv('{}stations.csv'.format(input_dim))
+    df_stations = pd.read_csv(dim_stations)
     df_stations.to_sql('stations', sql_engine, if_exists='replace', index=False)
 
     # Load stations dimension table and insert into sqlite
-    df_geonames = pd.read_csv('{}geonames.csv'.format(input_dim))
+    df_geonames = pd.read_csv(dim_geonames)
     df_geonames.to_sql('geonames', sql_engine, if_exists='replace', index=False)
     
 
@@ -402,6 +399,14 @@ def main():
     start = datetime.now()
     print('\n\nETL Pipeline Started at {}\n\n'.format(start))
 
+    
+    # directory of data lake
+    data_lake = "../datalake/weather"
+
+    # sqlite engine for temporary query results
+    create_directory('{}/sqlite'.format(data_lake))
+    sql_engine = create_engine('sqlite:///{}/sqlite/tempdb.db'.format(data_lake), echo=False)
+
     # input_year = 2021
     # input_city = "Toronto"
     # input_province = "Ontario"
@@ -418,7 +423,7 @@ def main():
 
 
     # Run the function to get the list of stations and the dataframe
-    results = extract_dimension_datasets(input_city, input_province, data_lake)
+    results = extract_dimension_datasets(input_city, input_province, data_lake, sql_engine)
     list_stations = results[0]
     df_stations = results[1]
 
@@ -426,7 +431,7 @@ def main():
     extract_weather_dataset(list_stations, list_years, data_lake)
 
     # Run the function to query the weather dataset and export Excel and return dataframes
-    results = query_weather_excel(list_years, input_city, input_province, data_lake)
+    results = query_weather_excel(list_years, input_city, input_province, data_lake, sql_engine)
     
     df_weather = results[0]
     df_stations= results[1]
@@ -443,51 +448,3 @@ if __name__ == "__main__":
     main()
 
 
-
-
-# #%%############################################################################
-# ###############################################################################
-# #                FOR TESTING IN JUPYTER NOTEBOOK ENVIRONMENT                  #
-# ###############################################################################
-# ###########################################################################%%##
-
-
-# start = datetime.now()
-# print('\n\nETL Pipeline Started at {}\n\n'.format(start))
-
-
-
-# # input_year = input('Enter a year (e.g. 2021): ')
-# # input_year = int(input_year)
-# # input_city = input('Enter a city (e.g. Toronto): ')
-# # input_province = input('Enter the province (e.g. Ontario): ')
-# input_year = 2021
-# input_city = "Toronto"
-# input_province = "Ontario"
-
-# # based on user input, determine the years to process
-# list_years = list(range(input_year, input_year - 3, -1))
-# print('\tProcessing Data for Years:', list_years)
-
-
-
-# # Run the function to get the list of stations and the dataframe
-# results = extract_dimension_datasets(input_city, input_province, data_lake)
-# list_stations = results[0]
-# df_stations = results[1]
-
-
-# # Run the function to extract the weather dataset
-# extract_weather_dataset(list_stations, list_years, data_lake)
-
-
-# # Run the function to query the weather dataset and export Excel and return dataframes
-# results = query_weather_excel(list_years, input_city, input_province, data_lake)
-
-# df_weather = results[0]
-# df_stations= results[1]
-# df_geonames = results[2]
-
-
-# end = datetime.now()
-# etl_process_details(start, end, list_years, input_city, input_province, df_weather)
