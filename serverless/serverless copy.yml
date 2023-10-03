@@ -1,0 +1,21 @@
+
+
+service: test100a
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: python3.8
+  versionFunctions: False
+  memorySize: 128
+  region: us-east-2
+
+
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: echo/hello
+          method: get

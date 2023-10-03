@@ -1,0 +1,414 @@
+{
+	"records": [
+		{
+			"domainName": "atlys.com",
+			"domainType": "added",
+			"createdDateISO8601": "2002-06-03T17:39:00+00:00",
+			"updatedDateISO8601": "2021-09-01T04:27:55+00:00",
+			"expiresDateISO8601": "2023-06-03T17:39:00+00:00",
+			"createdDateRaw": "2002-06-03 17:39:00 UTC",
+			"updatedDateRaw": "2021-09-01 04:27:55 UTC",
+			"expiresDateRaw": "2023-06-03 17:39:00 UTC",
+			"audit": {
+				"createdDate": "2021-10-29T16:13:07+00:00",
+				"updatedDate": "2021-10-29T16:13:07+00:00"
+			},
+			"nameServers": [
+				"NS1.VERCEL-DNS.COM",
+				"NS2.VERCEL-DNS.COM"
+			],
+			"whoisServer": "whois.enom.com",
+			"registrarName": "eNom, LLC",
+			"status": [
+				"clientTransferProhibited"
+			],
+			"cleanText": "Domain Name: atlys.com\nRegistrar WHOIS Server: WHOIS.ENOM.COM\nRegistrar URL: WWW.ENOM.COM\nUpdated Date: 2021-09-01T04:27:55.00Z\nCreation Date: 2002-06-03T17:39:00.00Z\nRegistrar Registration Expiration Date: 2023-06-03T17:39:00.00Z\nRegistrar: ENOM, INC.\nRegistrar IANA ID: 48\nDomain Status: clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited\nRegistrant Name: Whois Agent (360760233)\nRegistrant Organization: Whois Privacy Protection Service, Inc.\nRegistrant Street: PO Box 639\nRegistrant Street: C/O atlys.com\nRegistrant City: Kirkland\nRegistrant State/Province: WA\nRegistrant Postal Code: 98083\nRegistrant Country: US\nRegistrant Phone: +1.4252740657\nRegistrant Fax: +1.4259744730\nRegistrant Email: tqhndmjmp@whoisprivacyprotect.com\nAdmin Name: Whois Agent\nAdmin Organization: Whois Privacy Protection Service, Inc.\nAdmin Street: PO Box 639\nAdmin Street: C/O atlys.com\nAdmin City: Kirkland\nAdmin State/Province: WA\nAdmin Postal Code: 98083\nAdmin Country: US\nAdmin Phone: +1.4252740657\nAdmin Fax: +1.4259744730\nAdmin Email: tqhndmjmp@whoisprivacyprotect.com\nTech Name: Whois Agent\nTech Organization: Whois Privacy Protection Service, Inc.\nTech Street: PO Box 639\nTech Street: C/O atlys.com\nTech City: Kirkland\nTech State/Province: WA\nTech Postal Code: 98083\nTech Country: US\nTech Phone: +1.4252740657\nTech Fax: +1.4259744730\nTech Email: tqhndmjmp@whoisprivacyprotect.com\nName Server: NS1.VERCEL-DNS.COM\nName Server: NS2.VERCEL-DNS.COM\nRegistrar Abuse Contact Email: ABUSE@ENOM.COM\nRegistrar Abuse Contact Phone: +1.4259744689\n",
+			"rawText": "Domain Name: atlys.com\nRegistry Domain ID: 87198176_DOMAIN_COM-VRSN\nRegistrar WHOIS Server: WHOIS.ENOM.COM\nRegistrar URL: WWW.ENOM.COM\nUpdated Date: 2021-09-01T04:27:55.00Z\nCreation Date: 2002-06-03T17:39:00.00Z\nRegistrar Registration Expiration Date: 2023-06-03T17:39:00.00Z\nRegistrar: ENOM, INC.\nRegistrar IANA ID: 48\nDomain Status: clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited\nRegistrant Name: Whois Agent (360760233)\nRegistrant Organization: Whois Privacy Protection Service, Inc.\nRegistrant Street: PO Box 639\nRegistrant Street: C/O atlys.com\nRegistrant City: Kirkland\nRegistrant State/Province: WA\nRegistrant Postal Code: 98083\nRegistrant Country: US\nRegistrant Phone: +1.4252740657\nRegistrant Phone Ext: \nRegistrant Fax: +1.4259744730\nRegistrant Email: tqhndmjmp@whoisprivacyprotect.com\nAdmin Name: Whois Agent\nAdmin Organization: Whois Privacy Protection Service, Inc.\nAdmin Street: PO Box 639\nAdmin Street: C/O atlys.com\nAdmin City: Kirkland\nAdmin State/Province: WA\nAdmin Postal Code: 98083\nAdmin Country: US\nAdmin Phone: +1.4252740657\nAdmin Phone Ext: \nAdmin Fax: +1.4259744730\nAdmin Email: tqhndmjmp@whoisprivacyprotect.com\nTech Name: Whois Agent\nTech Organization: Whois Privacy Protection Service, Inc.\nTech Street: PO Box 639\nTech Street: C/O atlys.com\nTech City: Kirkland\nTech State/Province: WA\nTech Postal Code: 98083\nTech Country: US\nTech Phone: +1.4252740657\nTech Phone Ext: \nTech Fax: +1.4259744730\nTech Email: tqhndmjmp@whoisprivacyprotect.com\nName Server: NS1.VERCEL-DNS.COM\nName Server: NS2.VERCEL-DNS.COM\nDNSSEC: unsigned\nRegistrar Abuse Contact Email: ABUSE@ENOM.COM\nRegistrar Abuse Contact Phone: +1.4259744689\nURL of the ICANN WHOIS Data Problem Reporting System: HTTP://WDPRS.INTERNIC.NET/\n>>> Last update of WHOIS database: 2021-10-29T16:13:06.00Z <<<\n\nFor more information on Whois status codes, please visit https://icann.org/epp\n\n\nThe data in this whois database is provided to you for information\npurposes only, that is, to assist you in obtaining information about or\nrelated to a domain name registration record. We make this information\navailable \"as is,\" and do not guarantee its accuracy. By submitting a\nwhois query, you agree that you will use this data only for lawful\npurposes and that, under no circumstances will you use this data to: (1)\nenable high volume, automated, electronic processes that stress or load\nthis whois database system providing you this information; or (2) allow,\nenable, or otherwise support the transmission of mass unsolicited,\ncommercial advertising or solicitations via direct mail, electronic\nmail, or by telephone. The compilation, repackaging, dissemination or\nother use of this data is expressly prohibited without prior written\nconsent from us.  \n\nWe reserve the right to modify these terms at any time. By submitting \nthis query, you agree to abide by these terms.\nVersion 6.3 4/3/2002",
+			"registrantContact": {
+				"name": "Whois Agent (360760233)",
+				"organization": "Whois Privacy Protection Service, Inc.",
+				"street": "PO Box 639\nC/O atlys.com",
+				"city": "Kirkland",
+				"state": "WA",
+				"postalCode": "98083",
+				"country": "UNITED STATES",
+				"email": "tqhndmjmp@whoisprivacyprotect.com",
+				"telephone": "14252740657",
+				"telephoneExt": null,
+				"fax": "14259744730",
+				"faxExt": null,
+				"rawText": "Registrant Name: Whois Agent (360760233)\nRegistrant Organization: Whois Privacy Protection Service, Inc.\nRegistrant Street: PO Box 639\nRegistrant Street: C/O atlys.com\nRegistrant City: Kirkland\nRegistrant State/Province: WA\nRegistrant Postal Code: 98083\nRegistrant Country: US\nRegistrant Phone: +1.4252740657\nRegistrant Fax: +1.4259744730\nRegistrant Email: tqhndmjmp@whoisprivacyprotect.com"
+			},
+			"administrativeContact": {
+				"name": "Whois Agent",
+				"organization": "Whois Privacy Protection Service, Inc.",
+				"street": "PO Box 639\nC/O atlys.com",
+				"city": "Kirkland",
+				"state": "WA",
+				"postalCode": "98083",
+				"country": "UNITED STATES",
+				"email": "tqhndmjmp@whoisprivacyprotect.com",
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": "14259744730",
+				"faxExt": null,
+				"rawText": "Admin Name: Whois Agent\nAdmin Organization: Whois Privacy Protection Service, Inc.\nAdmin Street: PO Box 639\nAdmin Street: C/O atlys.com\nAdmin City: Kirkland\nAdmin State/Province: WA\nAdmin Postal Code: 98083\nAdmin Country: US\nAdmin Phone: +1.4252740657\nAdmin Fax: +1.4259744730\nAdmin Email: tqhndmjmp@whoisprivacyprotect.com"
+			},
+			"technicalContact": {
+				"name": "Whois Agent",
+				"organization": "Whois Privacy Protection Service, Inc.",
+				"street": "PO Box 639\nC/O atlys.com",
+				"city": "Kirkland",
+				"state": "WA",
+				"postalCode": "98083",
+				"country": "UNITED STATES",
+				"email": "tqhndmjmp@whoisprivacyprotect.com",
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": "14259744730",
+				"faxExt": null,
+				"rawText": "Tech Name: Whois Agent\nTech Organization: Whois Privacy Protection Service, Inc.\nTech Street: PO Box 639\nTech Street: C/O atlys.com\nTech City: Kirkland\nTech State/Province: WA\nTech Postal Code: 98083\nTech Country: US\nTech Phone: +1.4252740657\nTech Fax: +1.4259744730\nTech Email: tqhndmjmp@whoisprivacyprotect.com"
+			},
+			"billingContact": {
+				"name": null,
+				"organization": null,
+				"street": "",
+				"city": null,
+				"state": null,
+				"postalCode": null,
+				"country": null,
+				"email": null,
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": null,
+				"faxExt": null,
+				"rawText": ""
+			},
+			"zoneContact": {
+				"name": null,
+				"organization": null,
+				"street": "",
+				"city": null,
+				"state": null,
+				"postalCode": null,
+				"country": null,
+				"email": null,
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": null,
+				"faxExt": null,
+				"rawText": ""
+			}
+		},
+		{
+			"domainName": "atlys.com",
+			"domainType": "added",
+			"createdDateISO8601": "2002-06-03T17:39:00+00:00",
+			"updatedDateISO8601": "2021-03-29T13:52:23+00:00",
+			"expiresDateISO8601": "2021-06-03T17:39:00+00:00",
+			"createdDateRaw": "2002-06-03T17:39:00.00Z",
+			"updatedDateRaw": "2021-03-29T13:52:23.00Z",
+			"expiresDateRaw": "2021-06-03T17:39:00.00Z",
+			"audit": {
+				"createdDate": "2021-03-31T01:56:03+00:00",
+				"updatedDate": "2021-03-31T01:56:03+00:00"
+			},
+			"nameServers": [
+				"AMS-NS.CVGS.NET",
+				"CDC-NS.CVGS.NET",
+				"CDCED1.CVGS.NET",
+				"ODC-NS.CVGS.NET"
+			],
+			"whoisServer": "whois.enom.com",
+			"registrarName": "ENOM, INC.",
+			"status": [
+				"clientTransferProhibited"
+			],
+			"cleanText": "Domain Name: atlys.com\nRegistrar WHOIS Server: WHOIS.ENOM.COM\nRegistrar URL: WWW.ENOM.COM\nUpdated Date: 2021-03-29T13:52:23.00Z\nCreation Date: 2002-06-03T17:39:00.00Z\nRegistrar Registration Expiration Date: 2021-06-03T17:39:00.00Z\nRegistrar: ENOM, INC.\nRegistrar IANA ID: 48\nDomain Status: clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited\nRegistrant Name: REDACTED FOR PRIVACY\nRegistrant Organization: REDACTED FOR PRIVACY\nRegistrant Street: REDACTED FOR PRIVACY\nRegistrant City: REDACTED FOR PRIVACY\nRegistrant State/Province: OH\nRegistrant Postal Code: REDACTED FOR PRIVACY\nRegistrant Country: US\nRegistrant Phone: REDACTED FOR PRIVACY\nRegistrant Fax: REDACTED FOR PRIVACY\nRegistrant Email: https://tieredaccess.com/contact/80fc9af9-1b99-4245-add7-07d3433a4e4a\nAdmin Name: REDACTED FOR PRIVACY\nAdmin Organization: REDACTED FOR PRIVACY\nAdmin Street: REDACTED FOR PRIVACY\nAdmin City: REDACTED FOR PRIVACY\nAdmin State/Province: REDACTED FOR PRIVACY\nAdmin Postal Code: REDACTED FOR PRIVACY\nAdmin Country: REDACTED FOR PRIVACY\nAdmin Phone: REDACTED FOR PRIVACY\nAdmin Fax: REDACTED FOR PRIVACY\nAdmin Email: REDACTED FOR PRIVACY\nTech Name: REDACTED FOR PRIVACY\nTech Organization: REDACTED FOR PRIVACY\nTech Street: REDACTED FOR PRIVACY\nTech City: REDACTED FOR PRIVACY\nTech State/Province: REDACTED FOR PRIVACY\nTech Postal Code: REDACTED FOR PRIVACY\nTech Country: REDACTED FOR PRIVACY\nTech Phone: REDACTED FOR PRIVACY\nTech Fax: REDACTED FOR PRIVACY\nTech Email: REDACTED FOR PRIVACY\nName Server: AMS-NS.CVGS.NET\nName Server: CDC-NS.CVGS.NET\nName Server: CDCED1.CVGS.NET\nName Server: ODC-NS.CVGS.NET\nRegistrar Abuse Contact Email: ABUSE@ENOM.COM\nRegistrar Abuse Contact Phone: +1.4259744689\n",
+			"rawText": "Domain Name: atlys.com\nRegistry Domain ID: 87198176_DOMAIN_COM-VRSN\nRegistrar WHOIS Server: WHOIS.ENOM.COM\nRegistrar URL: WWW.ENOM.COM\nUpdated Date: 2021-03-29T13:52:23.00Z\nCreation Date: 2002-06-03T17:39:00.00Z\nRegistrar Registration Expiration Date: 2021-06-03T17:39:00.00Z\nRegistrar: ENOM, INC.\nRegistrar IANA ID: 48\nDomain Status: clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited\nRegistrant Name: REDACTED FOR PRIVACY\nRegistrant Organization: REDACTED FOR PRIVACY\nRegistrant Street: REDACTED FOR PRIVACY\nRegistrant Street: \nRegistrant City: REDACTED FOR PRIVACY\nRegistrant State/Province: OH\nRegistrant Postal Code: REDACTED FOR PRIVACY\nRegistrant Country: US\nRegistrant Phone: REDACTED FOR PRIVACY\nRegistrant Phone Ext: \nRegistrant Fax: REDACTED FOR PRIVACY\nRegistrant Email: https://tieredaccess.com/contact/80fc9af9-1b99-4245-add7-07d3433a4e4a\nAdmin Name: REDACTED FOR PRIVACY\nAdmin Organization: REDACTED FOR PRIVACY\nAdmin Street: REDACTED FOR PRIVACY\nAdmin Street: \nAdmin City: REDACTED FOR PRIVACY\nAdmin State/Province: REDACTED FOR PRIVACY\nAdmin Postal Code: REDACTED FOR PRIVACY\nAdmin Country: REDACTED FOR PRIVACY\nAdmin Phone: REDACTED FOR PRIVACY\nAdmin Phone Ext: \nAdmin Fax: REDACTED FOR PRIVACY\nAdmin Email: REDACTED FOR PRIVACY\nTech Name: REDACTED FOR PRIVACY\nTech Organization: REDACTED FOR PRIVACY\nTech Street: REDACTED FOR PRIVACY\nTech Street: \nTech City: REDACTED FOR PRIVACY\nTech State/Province: REDACTED FOR PRIVACY\nTech Postal Code: REDACTED FOR PRIVACY\nTech Country: REDACTED FOR PRIVACY\nTech Phone: REDACTED FOR PRIVACY\nTech Phone Ext: \nTech Fax: REDACTED FOR PRIVACY\nTech Email: REDACTED FOR PRIVACY\nName Server: AMS-NS.CVGS.NET\nName Server: CDC-NS.CVGS.NET\nName Server: CDCED1.CVGS.NET\nName Server: ODC-NS.CVGS.NET\nDNSSEC: unsigned\nRegistrar Abuse Contact Email: ABUSE@ENOM.COM\nRegistrar Abuse Contact Phone: +1.4259744689\nURL of the ICANN WHOIS Data Problem Reporting System: HTTP://WDPRS.INTERNIC.NET/\n>>> Last update of WHOIS database: 2021-03-31T01:55:55.00Z <<<\n\nFor more information on Whois status codes, please visit https://icann.org/epp\n\n\nThe data in this whois database is provided to you for information\npurposes only, that is, to assist you in obtaining information about or\nrelated to a domain name registration record. We make this information\navailable \"as is,\" and do not guarantee its accuracy. By submitting a\nwhois query, you agree that you will use this data only for lawful\npurposes and that, under no circumstances will you use this data to: (1)\nenable high volume, automated, electronic processes that stress or load\nthis whois database system providing you this information; or (2) allow,\nenable, or otherwise support the transmission of mass unsolicited,\ncommercial advertising or solicitations via direct mail, electronic\nmail, or by telephone. The compilation, repackaging, dissemination or\nother use of this data is expressly prohibited without prior written\nconsent from us.  \n\nWe reserve the right to modify these terms at any time. By submitting \nthis query, you agree to abide by these terms.\nVersion 6.3 4/3/2002",
+			"registrantContact": {
+				"name": "REDACTED FOR PRIVACY",
+				"organization": "REDACTED FOR PRIVACY",
+				"street": "REDACTED FOR PRIVACY",
+				"city": "REDACTED FOR PRIVACY",
+				"state": "OH",
+				"postalCode": "REDACTED FOR PRIVACY",
+				"country": "UNITED STATES",
+				"email": null,
+				"telephone": "",
+				"telephoneExt": null,
+				"fax": "",
+				"faxExt": null,
+				"rawText": "Registrant Name: REDACTED FOR PRIVACY\nRegistrant Organization: REDACTED FOR PRIVACY\nRegistrant Street: REDACTED FOR PRIVACY\nRegistrant City: REDACTED FOR PRIVACY\nRegistrant State/Province: OH\nRegistrant Postal Code: REDACTED FOR PRIVACY\nRegistrant Country: US\nRegistrant Phone: REDACTED FOR PRIVACY\nRegistrant Fax: REDACTED FOR PRIVACY\nRegistrant Email: https://tieredaccess.com/contact/80fc9af9-1b99-4245-add7-07d3433a4e4a"
+			},
+			"administrativeContact": {
+				"name": "REDACTED FOR PRIVACY",
+				"organization": "REDACTED FOR PRIVACY",
+				"street": "REDACTED FOR PRIVACY",
+				"city": "REDACTED FOR PRIVACY",
+				"state": "REDACTED FOR PRIVACY",
+				"postalCode": "REDACTED FOR PRIVACY",
+				"country": "REDACTED FOR PRIVACY",
+				"email": null,
+				"telephone": "",
+				"telephoneExt": null,
+				"fax": "",
+				"faxExt": null,
+				"rawText": "Admin Name: REDACTED FOR PRIVACY\nAdmin Organization: REDACTED FOR PRIVACY\nAdmin Street: REDACTED FOR PRIVACY\nAdmin City: REDACTED FOR PRIVACY\nAdmin State/Province: REDACTED FOR PRIVACY\nAdmin Postal Code: REDACTED FOR PRIVACY\nAdmin Country: REDACTED FOR PRIVACY\nAdmin Phone: REDACTED FOR PRIVACY\nAdmin Fax: REDACTED FOR PRIVACY\nAdmin Email: REDACTED FOR PRIVACY"
+			},
+			"technicalContact": {
+				"name": "REDACTED FOR PRIVACY",
+				"organization": "REDACTED FOR PRIVACY",
+				"street": "REDACTED FOR PRIVACY",
+				"city": "REDACTED FOR PRIVACY",
+				"state": "REDACTED FOR PRIVACY",
+				"postalCode": "REDACTED FOR PRIVACY",
+				"country": "REDACTED FOR PRIVACY",
+				"email": null,
+				"telephone": "",
+				"telephoneExt": null,
+				"fax": "",
+				"faxExt": null,
+				"rawText": "Tech Name: REDACTED FOR PRIVACY\nTech Organization: REDACTED FOR PRIVACY\nTech Street: REDACTED FOR PRIVACY\nTech City: REDACTED FOR PRIVACY\nTech State/Province: REDACTED FOR PRIVACY\nTech Postal Code: REDACTED FOR PRIVACY\nTech Country: REDACTED FOR PRIVACY\nTech Phone: REDACTED FOR PRIVACY\nTech Fax: REDACTED FOR PRIVACY\nTech Email: REDACTED FOR PRIVACY"
+			},
+			"billingContact": {
+				"name": null,
+				"organization": null,
+				"street": "",
+				"city": null,
+				"state": null,
+				"postalCode": null,
+				"country": null,
+				"email": null,
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": null,
+				"faxExt": null,
+				"rawText": null
+			},
+			"zoneContact": {
+				"name": null,
+				"organization": null,
+				"street": "",
+				"city": null,
+				"state": null,
+				"postalCode": null,
+				"country": null,
+				"email": null,
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": null,
+				"faxExt": null,
+				"rawText": null
+			}
+		},
+		{
+			"domainName": "atlys.com",
+			"domainType": "added",
+			"createdDateISO8601": "2002-06-03T17:39:00+00:00",
+			"updatedDateISO8601": "2021-03-29T13:52:23+00:00",
+			"expiresDateISO8601": "2021-06-03T17:39:00+00:00",
+			"createdDateRaw": "2002-06-03T17:39:00Z",
+			"updatedDateRaw": "2021-03-29T13:52:23Z",
+			"expiresDateRaw": "2021-06-03T17:39:00Z",
+			"audit": {
+				"createdDate": "2021-03-29T20:43:11+00:00",
+				"updatedDate": "2021-03-29T20:43:11+00:00"
+			},
+			"nameServers": [
+				"AMS-NS.CVGS.NET|CDC-NS.CVGS.NET|CDCED1.CVGS.NET|ODC-NS.CVGS.NET|"
+			],
+			"whoisServer": "whois.enom.com",
+			"registrarName": "eNom, LLC",
+			"status": [
+				"clientTransferProhibited"
+			],
+			"cleanText": "Domain Name: atlys.com|Registry Domain ID: 87198176_DOMAIN_COM-VRSN|Registrar WHOIS Server: WHOIS.ENOM.COM|Registrar URL: WWW.ENOM.COM|Updated Date: 2021-03-29T13:52:23.00Z|Creation Date: 2002-06-03T17:39:00.00Z|Registrar Registration Expiration Date: 2021-06-03T17:39:00.00Z|Registrar: ENOM, INC.|Registrar IANA ID: 48|Domain Status: clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited|Registrant Name: REDACTED FOR PRIVACY|Registrant Organization: REDACTED FOR PRIVACY|Registrant Street: REDACTED FOR PRIVACY|Registrant Street: |Registrant City: REDACTED FOR PRIVACY|Registrant State/Province: OH|Registrant Postal Code: REDACTED FOR PRIVACY|Registrant Country: US|Registrant Phone: REDACTED FOR PRIVACY|Registrant Phone Ext: |Registrant Fax: REDACTED FOR PRIVACY|Registrant Email: https://tieredaccess.com/contact/f5835714-834e-4afe-b32a-ba9f0fe8177c|Admin Name: REDACTED FOR PRIVACY|Admin Organization: REDACTED FOR PRIVACY|Admin Street: REDACTED FOR PRIVACY|Admin Street: |Admin City: REDACTED FOR PRIVACY|Admin State/Province: REDACTED FOR PRIVACY|Admin Postal Code: REDACTED FOR PRIVACY|Admin Country: REDACTED FOR PRIVACY|Admin Phone: REDACTED FOR PRIVACY|Admin Phone Ext: |Admin Fax: REDACTED FOR PRIVACY|Admin Email: REDACTED FOR PRIVACY|Tech Name: REDACTED FOR PRIVACY|Tech Organization: REDACTED FOR PRIVACY|Tech Street: REDACTED FOR PRIVACY|Tech Street: |Tech City: REDACTED FOR PRIVACY|Tech State/Province: REDACTED FOR PRIVACY|Tech Postal Code: REDACTED FOR PRIVACY|Tech Country: REDACTED FOR PRIVACY|Tech Phone: REDACTED FOR PRIVACY|Tech Phone Ext: |Tech Fax: REDACTED FOR PRIVACY|Tech Email: REDACTED FOR PRIVACY|Name Server: AMS-NS.CVGS.NET|Name Server: CDC-NS.CVGS.NET|Name Server: CDCED1.CVGS.NET|Name Server: ODC-NS.CVGS.NET|DNSSEC: unsigned|Registrar Abuse Contact Email: ABUSE@ENOM.COM|Registrar Abuse Contact Phone: +1.4259744689|URL of the ICANN WHOIS Data Problem Reporting System: HTTP://WDPRS.INTERNIC.NET/|>>> Last update of WHOIS database: 2021-03-29T20:35:28.00Z <<<||For more information on Whois status codes, please visit https://icann.org/epp|||The data in this whois database is provided to you for information|purposes only, that is, to assist you in obtaining information about or|related to a domain name registration record. We make this information|available \"as is,\" and do not guarantee its accuracy. By submitting a|whois query, you agree that you will use this data only for lawful|purposes and that, under no circumstances will you use this data to: (1)|enable high volume, automated, electronic processes that stress or load|this whois database system providing you this information; or (2) allow,|enable, or otherwise support the transmission of mass unsolicited,|commercial advertising or solicitations via direct mail, electronic|mail, or by telephone. The compilation, repackaging, dissemination or|other use of this data is expressly prohibited without prior written|consent from us.  ||We reserve the right to modify these terms at any time. By submitting |this query, you agree to abide by these terms.|Version 6.3 4/3/2002",
+			"rawText": "Domain Name: atlys.com|Registry Domain ID: 87198176_DOMAIN_COM-VRSN|Registrar WHOIS Server: WHOIS.ENOM.COM|Registrar URL: WWW.ENOM.COM|Updated Date: 2021-03-29T13:52:23.00Z|Creation Date: 2002-06-03T17:39:00.00Z|Registrar Registration Expiration Date: 2021-06-03T17:39:00.00Z|Registrar: ENOM, INC.|Registrar IANA ID: 48|Domain Status: clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited|Registrant Name: REDACTED FOR PRIVACY|Registrant Organization: REDACTED FOR PRIVACY|Registrant Street: REDACTED FOR PRIVACY|Registrant Street: |Registrant City: REDACTED FOR PRIVACY|Registrant State/Province: OH|Registrant Postal Code: REDACTED FOR PRIVACY|Registrant Country: US|Registrant Phone: REDACTED FOR PRIVACY|Registrant Phone Ext: |Registrant Fax: REDACTED FOR PRIVACY|Registrant Email: https://tieredaccess.com/contact/f5835714-834e-4afe-b32a-ba9f0fe8177c|Admin Name: REDACTED FOR PRIVACY|Admin Organization: REDACTED FOR PRIVACY|Admin Street: REDACTED FOR PRIVACY|Admin Street: |Admin City: REDACTED FOR PRIVACY|Admin State/Province: REDACTED FOR PRIVACY|Admin Postal Code: REDACTED FOR PRIVACY|Admin Country: REDACTED FOR PRIVACY|Admin Phone: REDACTED FOR PRIVACY|Admin Phone Ext: |Admin Fax: REDACTED FOR PRIVACY|Admin Email: REDACTED FOR PRIVACY|Tech Name: REDACTED FOR PRIVACY|Tech Organization: REDACTED FOR PRIVACY|Tech Street: REDACTED FOR PRIVACY|Tech Street: |Tech City: REDACTED FOR PRIVACY|Tech State/Province: REDACTED FOR PRIVACY|Tech Postal Code: REDACTED FOR PRIVACY|Tech Country: REDACTED FOR PRIVACY|Tech Phone: REDACTED FOR PRIVACY|Tech Phone Ext: |Tech Fax: REDACTED FOR PRIVACY|Tech Email: REDACTED FOR PRIVACY|Name Server: AMS-NS.CVGS.NET|Name Server: CDC-NS.CVGS.NET|Name Server: CDCED1.CVGS.NET|Name Server: ODC-NS.CVGS.NET|DNSSEC: unsigned|Registrar Abuse Contact Email: ABUSE@ENOM.COM|Registrar Abuse Contact Phone: +1.4259744689|URL of the ICANN WHOIS Data Problem Reporting System: HTTP://WDPRS.INTERNIC.NET/|>>> Last update of WHOIS database: 2021-03-29T20:35:28.00Z <<<||For more information on Whois status codes, please visit https://icann.org/epp|||The data in this whois database is provided to you for information|purposes only, that is, to assist you in obtaining information about or|related to a domain name registration record. We make this information|available \"as is,\" and do not guarantee its accuracy. By submitting a|whois query, you agree that you will use this data only for lawful|purposes and that, under no circumstances will you use this data to: (1)|enable high volume, automated, electronic processes that stress or load|this whois database system providing you this information; or (2) allow,|enable, or otherwise support the transmission of mass unsolicited,|commercial advertising or solicitations via direct mail, electronic|mail, or by telephone. The compilation, repackaging, dissemination or|other use of this data is expressly prohibited without prior written|consent from us.  ||We reserve the right to modify these terms at any time. By submitting |this query, you agree to abide by these terms.|Version 6.3 4/3/2002",
+			"registrantContact": {
+				"name": "REDACTED FOR PRIVACY",
+				"organization": "REDACTED FOR PRIVACY",
+				"street": "REDACTED FOR PRIVACY",
+				"city": "REDACTED FOR PRIVACY",
+				"state": "OH",
+				"postalCode": "REDACTED FOR PRIVACY",
+				"country": "UNITED STATES",
+				"email": null,
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": null,
+				"faxExt": null,
+				"rawText": "Registrant Name: REDACTED FOR PRIVACY|Registrant Organization: REDACTED FOR PRIVACY|Registrant Street: REDACTED FOR PRIVACY|Registrant City: REDACTED FOR PRIVACY|Registrant State/Province: OH|Registrant Postal Code: REDACTED FOR PRIVACY|Registrant Country: US|Registrant Phone: REDACTED FOR PRIVACY|Registrant Fax: REDACTED FOR PRIVACY|Registrant Email: https://tieredaccess.com/contact/f5835714-834e-4afe-b32a-ba9f0fe8177c"
+			},
+			"administrativeContact": {
+				"name": "REDACTED FOR PRIVACY",
+				"organization": "REDACTED FOR PRIVACY",
+				"street": "REDACTED FOR PRIVACY",
+				"city": "REDACTED FOR PRIVACY",
+				"state": "REDACTED FOR PRIVACY",
+				"postalCode": "REDACTED FOR PRIVACY",
+				"country": "REDACTED FOR PRIVACY",
+				"email": null,
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": null,
+				"faxExt": null,
+				"rawText": "Admin Name: REDACTED FOR PRIVACY|Admin Organization: REDACTED FOR PRIVACY|Admin Street: REDACTED FOR PRIVACY|Admin City: REDACTED FOR PRIVACY|Admin State/Province: REDACTED FOR PRIVACY|Admin Postal Code: REDACTED FOR PRIVACY|Admin Country: REDACTED FOR PRIVACY|Admin Phone: REDACTED FOR PRIVACY|Admin Fax: REDACTED FOR PRIVACY|Admin Email: REDACTED FOR PRIVACY"
+			},
+			"technicalContact": {
+				"name": "REDACTED FOR PRIVACY",
+				"organization": "REDACTED FOR PRIVACY",
+				"street": "REDACTED FOR PRIVACY",
+				"city": "REDACTED FOR PRIVACY",
+				"state": "REDACTED FOR PRIVACY",
+				"postalCode": "REDACTED FOR PRIVACY",
+				"country": "REDACTED FOR PRIVACY",
+				"email": null,
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": null,
+				"faxExt": null,
+				"rawText": "Tech Name: REDACTED FOR PRIVACY|Tech Organization: REDACTED FOR PRIVACY|Tech Street: REDACTED FOR PRIVACY|Tech City: REDACTED FOR PRIVACY|Tech State/Province: REDACTED FOR PRIVACY|Tech Postal Code: REDACTED FOR PRIVACY|Tech Country: REDACTED FOR PRIVACY|Tech Phone: REDACTED FOR PRIVACY|Tech Fax: REDACTED FOR PRIVACY|Tech Email: REDACTED FOR PRIVACY"
+			},
+			"billingContact": {
+				"name": null,
+				"organization": null,
+				"street": "",
+				"city": null,
+				"state": null,
+				"postalCode": null,
+				"country": null,
+				"email": null,
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": null,
+				"faxExt": null,
+				"rawText": null
+			},
+			"zoneContact": {
+				"name": null,
+				"organization": null,
+				"street": "",
+				"city": null,
+				"state": null,
+				"postalCode": null,
+				"country": null,
+				"email": null,
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": null,
+				"faxExt": null,
+				"rawText": null
+			}
+		},
+		{
+			"updatedDate": "2020-05-05T08:15:10+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2020-02-13T00:06:39+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2020-02-13T00:06:39+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2019-05-05T08:26:17+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2019-05-05T08:26:17+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2019-05-05T08:26:17+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2018-06-27T16:12:44+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2018-06-27T16:12:44+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2018-06-10T03:54:17+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2018-06-09T20:54:16+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2017-05-05T01:26:40+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2017-05-05T08:26:39+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2017-05-05T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2017-03-03T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2015-12-14T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2015-12-14T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2015-12-14T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2015-12-14T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2015-05-28T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2014-01-10T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2014-01-10T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2013-03-13T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2013-03-13T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2013-03-13T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2012-05-05T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2011-04-29T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		},
+		{
+			"updatedDate": "2010-05-05T00:00:00+00:00",
+			"otherWhoisData": "{ omitted in the demo }"
+		}
+	],
+	"recordsCount": 30
+}

@@ -1,0 +1,8 @@
+
+npm install -g serverless
+
+serverless create --template aws-python3
+
+sls config credentials --provider aws --key  --secret 
+
+sls deploy --stage dev
